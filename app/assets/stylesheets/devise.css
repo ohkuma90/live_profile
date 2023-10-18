@@ -1,0 +1,19 @@
+.registrations-form {
+  display: flex;
+  justify-content: center;
+}
+
+.form-area {
+  width: 80%;
+}
+
+.main-area {
+  height: 200px;
+  width: 100%;
+  border: 5px solid #FFF;
+  margin-top: 40px;
+  box-shadow: -5px -5px 20px #c4d82d,
+                4px 4px 4px #c4d82d inset,
+                5px 5px 20px #ffe200,
+                -4px -4px 4px #ffe200 inset;
+}
