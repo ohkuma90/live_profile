@@ -1,5 +1,6 @@
 <div class="registrations-form">
   <div class="form-area">
+    <h3 class="form-message">基本情報</h3>
     <div class="main-area">
       <%= form_with model: @user, url: user_registration_path, local: true do |f| %>
         <div class="input-area">
@@ -22,7 +23,9 @@
           <%= f.label "XのID", class: "form-label" %>
           <%= f.password_field :x_id, class: "form-control" %>
         </div>
+    </div>
         <h3 class="form-message">プロフィール用質問</h3>
+    <div class="question-area">
         <div class="input-area">
           <%= f.label "何年の代？", class: "form-label" %>
           <%= f.password_field :birth, class: "form-control", placeholder:"例) 97", maxlength:"2" %>

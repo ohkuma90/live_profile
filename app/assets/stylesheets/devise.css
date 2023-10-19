@@ -8,10 +8,8 @@
 }
 
 .main-area {
-  height: 1120px;
   width: 100%;
   border: 5px solid #FFF;
-  margin: 40px 0;
   box-shadow: -5px -5px 20px #c4d82d,
                 4px 4px 4px #c4d82d inset,
                 5px 5px 20px #ffe200,
@@ -46,5 +44,16 @@
 .form-message {
   text-shadow: 4px 4px 5px #c3d82d;
   color: #FFF;
+  margin: 20px 0;
+}
+
+.question-area {
+  width: 100%;
+  border: 5px solid #FFF;
+  box-shadow: -5px -5px 20px #c4d82d,
+                4px 4px 4px #c4d82d inset,
+                5px 5px 20px #ffe200,
+                -4px -4px 4px #ffe200 inset;
+  padding: 20px;
   margin-bottom: 20px;
 }
