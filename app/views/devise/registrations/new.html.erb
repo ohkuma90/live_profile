@@ -9,7 +9,7 @@
         </div>
         <div class="input-area">
           <%= f.label :email, class: "form-label" %>
-          <%= f.email_field :email, class: "form-control" %>
+          <%= f.email_field :email, class: "form-control", placeholder:"live-profile@○○○○" %>
         </div>
         <div class="input-area">
           <%= f.label :password, class: "form-label" %>
@@ -21,42 +21,42 @@
         </div>
         <div class="input-area">
           <%= f.label "XのID", class: "form-label" %>
-          <%= f.password_field :x_id, class: "form-control" %>
+          <%= f.text_field :x_id, class: "form-control", placeholder:"@○○○○" %>
         </div>
     </div>
         <h3 class="form-message">プロフィール用質問</h3>
     <div class="question-area">
         <div class="input-area">
           <%= f.label "何年の代？", class: "form-label" %>
-          <%= f.password_field :birth, class: "form-control", placeholder:"例) 97", maxlength:"2" %>
+          <%= f.text_field :birth, class: "form-control", placeholder:"例) 97", maxlength:"2" %>
         </div>
         <div class="input-area">
           <%= f.label "みんなからは何て呼ばれる？", class: "form-label" %>
-          <%= f.password_field :nickname, class: "form-control" %>
+          <%= f.text_field :nickname, class: "form-control" %>
         </div>
         <div class="input-area">
           <%= f.label "好きな食べ物は？", class: "form-label" %>
-          <%= f.password_field :favorite_food, class: "form-control" %>
+          <%= f.text_field :favorite_food, class: "form-control" %>
         </div>
         <div class="input-area">
           <%= f.label "苦手な食べ物は？", class: "form-label" %>
-          <%= f.password_field :hated_food, class: "form-control" %>
+          <%= f.text_field :hated_food, class: "form-control" %>
         </div>
         <div class="input-area">
           <%= f.label "休みの日は何をして過ごす？", class: "form-label" %>
-          <%= f.password_field :holiday, class: "form-control" %>
+          <%= f.text_field :holiday, class: "form-control" %>
         </div>
         <div class="input-area">
           <%= f.label "趣味は？", class: "form-label" %>
-          <%= f.password_field :hobby, class: "form-control" %>
+          <%= f.text_field :hobby, class: "form-control" %>
         </div>
         <div class="input-area">
           <%= f.label "初めて好きになったバンドは？", class: "form-label" %>
-          <%= f.password_field :first_band, class: "form-control" %>
+          <%= f.text_field :first_band, class: "form-control" %>
         </div>
         <div class="input-area">
           <%= f.label "初めていったライブは？", class: "form-label" %>
-          <%= f.password_field :first_live, class: "form-control" %>
+          <%= f.text_field :first_live, class: "form-control" %>
         </div>
           <%= f.submit "Sign Up", class: "btn-primary" %>
       <% end %>
