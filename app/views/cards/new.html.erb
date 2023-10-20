@@ -1,0 +1,27 @@
+<div class="registrations-form">
+  <div class="form-area">
+    <h3 class="form-message">ログイン</h3>
+    <div class="main-area">
+      <%= form_with model: @card, local: true do |f| %>
+        <div class="input-area">
+          <%= f.label "今日のライブは？", class: "form-label" %>
+          <%= f.text_field :live, class: "form-control" %>
+        </div>
+        <h3 class="form-message">今好きなバンドランキング！</h3>
+        <div class="input-area">
+          <%= f.label "Number 1 !!", class: "form-label" %>
+          <%= f.text_field :rank1, class: "form-control" %>
+        </div>
+        <div class="input-area">
+          <%= f.label "Number 2", class: "form-label" %>
+          <%= f.text_field :rank2, class: "form-control" %>
+        </div>
+        <div class="input-area">
+          <%= f.label "Number 3", class: "form-label" %>
+          <%= f.text_field :rank3, class: "form-control" %>
+        </div>
+        <%= f.submit "Log In", class: "btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+</div>
