@@ -19,8 +19,8 @@
 
 ### Association
 
-- has_many :books
-- hes_many :cards, through: :books
+- has_one :book
+- hes_many :cards
 
 
 ## cardsテーブル
@@ -35,11 +35,11 @@
 
 ### Association
 
-- has_many :books
-- hes_many :users, through: :books
+- belongs_to :user
+- hes_many :books, through: :book_cars
 
 
-## purchases テーブル
+## books テーブル
 
 | Column      | Type       | Options                       |
 | ----------- | ---------- | ----------------------------- |
@@ -48,6 +48,6 @@
 
 ### Association
 
-- belongs_to :card
 - belongs_to :user
+- hes_many :cards, through: :book_cars
 
