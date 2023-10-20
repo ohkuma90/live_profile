@@ -2,4 +2,5 @@ Rails.application.routes.draw do
   root "users#show"
   devise_for :users
   resources :users, only: :show
+  resources :cards, only: [:new, :create]
 end
