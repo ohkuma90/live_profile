@@ -16,4 +16,6 @@ class User < ApplicationRecord
     validates :first_band
     validates :first_live
   end
+
+  has_many :cards
 end
