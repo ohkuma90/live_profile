@@ -32,8 +32,17 @@
   text-decoration: none;
   text-shadow: 6px 6px 10px #ffe200;
   color: #FFF;
-  font-size: 12px;
+  font-size: 13px;
+  margin-left: 20px;
 }
+
+.user-name {
+  text-shadow: 6px 6px 10px #ffe200;
+  color: #FFF;
+  font-size: 13px;
+  margin-top: 3px;
+}
+
 
 /* フッター部分 */
 .footer {
