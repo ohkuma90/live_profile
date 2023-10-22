@@ -42,7 +42,7 @@
         <div class="bottom-text">
           <h4>\ 今日のライブ /</h4>
           <div class="live-area">
-            <p>CDJ 2023 31日（希望）</p>
+            <p><%= @latest_card.live %></p>
           </div>
         </div>
         <div class="hand-area">
@@ -57,13 +57,13 @@
       <h5>推しバンドランキング！</h4>
       <div class="rank-area">
         <div class="band-name">
-          <p>Lucky Kilimanjaro</p>
+          <p><%= @latest_card.rank1 %></p>
         </div>
         <div class="band-name">
-          <p>the dadadadys</p>
+          <p><%= @latest_card.rank2 %></p>
         </div>
         <div class="band-name">
-          <p>Kroi</p>
+          <p><%= @latest_card.rank3 %></p>
         </div>
       </div>
     </div>
