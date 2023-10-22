@@ -54,6 +54,10 @@
   font-size: 18px;
 }
 
+.name-area h4 {
+  margin-bottom: 5px;
+}
+
 /* トップライト部分 */
 .top-right {
   height: 100%;

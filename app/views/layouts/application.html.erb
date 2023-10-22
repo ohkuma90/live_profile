@@ -30,8 +30,9 @@
       </div>
     </header>
 
-    <%= render "shared/card"%>
-
+    <% if user_signed_in? && @latest_card.present? %>
+      <%= render "shared/card"%>
+    <% end %>
     <%= yield %>
     <footer class="footer"></footer>
   </body>
