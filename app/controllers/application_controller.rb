@@ -12,7 +12,9 @@ class ApplicationController < ActionController::Base
   end
 
   def set_latest_card
-    @latest_card = current_user.cards.last 
+    if user_signed_in?
+      @latest_card = current_user.cards.last
+    end
   end
 
 end
