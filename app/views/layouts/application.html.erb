@@ -14,7 +14,9 @@
     <header class="header">
       <div class="header-wrapper">
         <div class="header-left">
-          <h2>Live<br>Profile</h2>
+          <%= link_to  new_user_session_path do %>
+            <h2>Live<br>Profile</h2>
+          <% end %>
         </div>
         <div class="header-right">
           <ul class="user-area">
@@ -34,6 +36,8 @@
       <%= render "shared/card"%>
     <% end %>
     <%= yield %>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <%= image_tag "card_image.png", class:"icons", id:"card-button"%>
+    </footer>
   </body>
 </html>
