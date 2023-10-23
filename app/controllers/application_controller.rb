@@ -8,7 +8,11 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit(:sign_up,
                                       keys: [:name, :x_id, :birth, :nickname,
                                               :favorite_food, :hated_food, :holiday,
-                                              :hobby, :first_band, :first_live])
+                                              :hobby, :first_band, :first_live, :image])
+    devise_parameter_sanitizer.permit(:account_update,
+                                      keys: [:name, :x_id, :birth, :nickname,
+                                              :favorite_food, :hated_food, :holiday,
+                                              :hobby, :first_band, :first_live, :image])
   end
 
   def set_latest_card
