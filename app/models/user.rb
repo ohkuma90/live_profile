@@ -15,7 +15,8 @@ class User < ApplicationRecord
     validates :hobby
     validates :first_band
     validates :first_live
+    validates :image
   end
-
+  has_one_attached :image
   has_many :cards
 end
