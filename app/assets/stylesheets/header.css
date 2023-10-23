@@ -19,9 +19,12 @@
 }
 
 .header-left {
-  color: #FFF;
   text-shadow: 4px 4px 10px #c3d82d;
   font-family: 'Rampart One', sans-serif;
+}
+
+.header-left h2 {
+  color: #FFF;
 }
 
 .user-area {
@@ -53,4 +56,8 @@
   position: fixed;
   bottom: 0;
   left: 0; 
+}
+
+.icons {
+  height: 32px;
 }
