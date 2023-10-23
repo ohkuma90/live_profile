@@ -2,14 +2,21 @@
 
 .card {
   background-color: rgb(255,207,207);
-  height: 600px;
+  height: calc(100vh - 160px);
   width: 100%;
   padding: 10px 10px;
+  position: fixed;
+  top: 80px;
+  display: block;
+}
+
+.card.is-hidden {
+  display: none;
 }
 
 /* トップ部分 */
 .card-top {
-  height: 180px;
+  height: 33%;
   margin: 0 auto;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -51,6 +58,10 @@
   font-size: 18px;
 }
 
+.name-area h4 {
+  margin-bottom: 5px;
+}
+
 /* トップライト部分 */
 .top-right {
   height: 100%;
@@ -78,7 +89,7 @@
 /* メイン部分 */
 .card-main {
   border: 4px solid rgb(152,121,106);
-  height: 190px;
+  height: 33%;
   margin: 0 auto;
   margin-bottom: 10px;
   border-radius: 10%;
@@ -95,6 +106,7 @@
 .card-main span {
   background-color: #fff;
   letter-spacing: 1px;
+  padding: 2px;
 }
 
 /* ボトム部分 */
@@ -129,6 +141,7 @@
   width: 80%;
   margin: 0 auto;
   font-weight: 600;
+  padding: 1px;
 }
 
 .hand-area {
