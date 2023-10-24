@@ -36,7 +36,7 @@
 ### Association
 
 - belongs_to :user
-- hes_many :books, through: :book_cars
+- hes_many :books, through: :book_cards
 
 
 ## books テーブル
@@ -49,5 +49,5 @@
 ### Association
 
 - belongs_to :user
-- hes_many :cards, through: :book_cars
+- hes_many :cards, through: :book_cards
 
