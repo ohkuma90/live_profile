@@ -19,4 +19,5 @@ class User < ApplicationRecord
   end
   has_one_attached :image
   has_many :cards
+  has_one :book
 end

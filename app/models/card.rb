@@ -1,5 +1,6 @@
 class Card < ApplicationRecord
   belongs_to :user
+  has_many :books, through: :book_cards
 
   with_options presence: true do
     validates :live
